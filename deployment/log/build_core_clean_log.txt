@@ -1,0 +1,9 @@
+Buildfile: C:\Users\subhalaxmi mohapatra\Documents\Mendix\ExcelImporter\Online_Reading_App-main\deployment\build_core.xml
+
+clean:
+   [delete] Deleting directory C:\Users\subhalaxmi mohapatra\Documents\Mendix\ExcelImporter\Online_Reading_App-main\deployment\model
+
+BUILD SUCCESSFUL
+Total time: 2 seconds
+
+

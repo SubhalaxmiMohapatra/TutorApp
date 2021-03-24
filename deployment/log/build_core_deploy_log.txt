@@ -1,0 +1,9 @@
+Buildfile: C:\Users\subhalaxmi mohapatra\Documents\Mendix\ExcelImporter\Online_Reading_App-main\deployment\build_core.xml
+
+deploy:
+     [copy] Copying 32 files to C:\Users\subhalaxmi mohapatra\Documents\Mendix\ExcelImporter\Online_Reading_App-main\deployment
+
+BUILD SUCCESSFUL
+Total time: 1 second
+
+

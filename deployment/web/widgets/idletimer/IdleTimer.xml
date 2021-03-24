@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="idletimer.widget.IdleTimer" needsEntityContext="false" xmlns="http://www.mendix.com/widget/1.0/">
+	<name>IdleTimer</name>
+	<description>Detects inactive users.</description>
+	<icon>
+iVBORw0KGgoAAAANSUhEUgAAABkAAAAbCAIAAAAGQ7M/AAAAAXNSR0IArs4c6QAAAARnQU1BAACx
+jwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAM9SURBVEhLpZVPKOVRFMff7/2d98yTZGnzIilZ
+CFkJycKfDQuTRCllIxuW1spayMaCjZRkmlnYIWVBr5RsXsYslEj5///ffPStO/ddxmTmLH7de37n
+fO8533Puub7n5+e6ujrfv0ooFMK1qqoKHK+hocHzvIWFhevr60Ag8CFM7K+urrKyslq/tP5I/fRw
+fnp6Au5DKLbxw8NDMBgMBcJeNBo9Pj6ORCKPj49/RfT7/X86MuiF/KACJAtMjYBLvIhx5tf29jZ6
+W3C/v7/HhtB8kIcDzKHla8vd3R12RmMbsMZ/dnbW/A0HIx5Yt7e3HEWONvdYK8atra1kMpmZmQnN
+eXl5FRUVNzc3MDM1NdXR0aGgAImEPr0Xl86cnp4uLCxU33R3d6NhMTw8rL/ErrSIKw2L0ExSvb29
+Yko+TU1NRUVFLDIyMhKJxMjIyODgIIh0kgzA+l0XkQ2F+/v7rHd2dshOUTQ3N+/u7rIl8cbGxtra
+2pWVlb29PTRpLelwf3Fx4ZA6OjqKpqCgoLS0tK2tzakPW7J5I0dUNTU1PT09TlkPDw/phrW1NaLr
+7Ow8PT0lAyqAGZxAmYvF/uTkhBDOzs50OG6mucCSsri4eGxsjIUoN5LGPVpOzs/Pl50iR0itq6vL
+OA8NDVVXV7NVODZW2p2ALMqk2oHFoqWl5fLycnJy0lyA3Nxc/dKEsCUNi6A2Nzd1mTCl5PPz8yUl
+JfX19QcHB7qtS0tLdCwLdWmamDoqfxp6eXlZkadSKZp7ZmZmYmKCkKXEeX19/c0c3b4fHx83/WnT
+oZNoLu4Ai9eX1+17WbS3twNHsjYWHFVWVio16bnFDve+cDhs5gQOyoWq45adnd3X1zcwMCAU2l3O
+dJaay8F6mUVAcK1gyhApmiF+Y2MDB4ZEf3+/CifKJDhqOvKNRmIeTXB+fo4zMTMUZfp6BNkQBktK
+weHij8Vii4uLbDRdNTNZOO+IM0611YBTo3yOxj0KXF5eXlZWRsDORNaWySFeQCd2e+STNcTxDq2u
+rn77+t3DiGs4NzcXj8fttwO9tnZ2zuPCYcAdHR1xPXJycjxq/DL2/080318oB1tRvEnwO6cAga8e
+Q3L/BSBya2/mnXnxAAAAAElFTkSuQmCC
+	</icon>
+	<properties>
+		<property key="timeunit" type="enumeration" defaultValue="min">
+			<caption>Time unit</caption>
+			<category>Behavior</category>
+			<description>Timeout unit, timeout is expressed in this unit.</description>
+			<enumerationValues>
+				<enumerationValue key="sec">Seconds</enumerationValue>
+				<enumerationValue key="min">Minutes</enumerationValue>
+				<enumerationValue key="hrs">Hours</enumerationValue>
+			</enumerationValues>
+		</property>		
+		<property key="timeout" type="integer" defaultValue="15">
+    		<caption>Timeout</caption>
+      		<category>Behavior</category>
+      		<description>Time out in time units.</description>
+    	</property>
+		<property key="userentity" type="entity" required="true">
+			<caption>User entity</caption>
+			<category>Behavior</category>
+			<description>Select the user entity here. Should be: System.User</description>
+		</property>		
+		<property key="timeoutmicroflow" type="microflow" required="true" entityProperty="userentity">
+			<caption>Timeout action</caption>
+			<category>Behavior</category>
+			<description>This microflow will be started when timeout is passed without user activity. Either keyboard, mouse movements, mouse clicks and scrolling will reset the timer. Log out must be done in the microflow.</description>
+			<returnType type="Void"/>
+		</property>	
+	</properties>
+</widget>

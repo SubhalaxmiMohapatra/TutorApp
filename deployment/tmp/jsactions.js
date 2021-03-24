@@ -1,0 +1,2 @@
+export const MyFirstModule$disable_login_enable_logout = async () => (await import("C:/Users/subhalaxmi mohapatra/Documents/Mendix/ExcelImporter/Online_Reading_App-main/javascriptsource/myfirstmodule/actions/disable_login_enable_logout")).disable_login_enable_logout;
+export const MyFirstModule$enable_login_disable_logout = async () => (await import("C:/Users/subhalaxmi mohapatra/Documents/Mendix/ExcelImporter/Online_Reading_App-main/javascriptsource/myfirstmodule/actions/enable_login_disable_logout")).enable_login_disable_logout;

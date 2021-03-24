@@ -1,0 +1,12 @@
+Buildfile: C:\Users\subhalaxmi mohapatra\Documents\Mendix\ExcelImporter\Online_Reading_App-main\deployment\build_core.xml
+
+compile:
+    [javac] Compiling 1 source file to C:\Users\subhalaxmi mohapatra\Documents\Mendix\ExcelImporter\Online_Reading_App-main\deployment\run\bin
+
+package:
+      [jar] Building jar: C:\Users\subhalaxmi mohapatra\Documents\Mendix\ExcelImporter\Online_Reading_App-main\deployment\model\bundles\project.jar
+
+BUILD SUCCESSFUL
+Total time: 5 seconds
+
+

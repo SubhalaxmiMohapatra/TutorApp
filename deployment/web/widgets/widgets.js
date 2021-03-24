@@ -1,0 +1,1 @@
+define(["AudioVideoPlayback/widget/AudioVideoPlayback", "AudioVideoPlayback/widget/AudioVideoPlaybackEmbed", "AudioVideoPlayback/widget/AudioVideoPlaybackRemoteFile", "AudioVideoPlayback/widget/AudioVideoPlaybackURL", "DropZone/widget/DropZone", "idletimer/widget/IdleTimer", "Counter/widget/Counter", "SprintrFeedbackWidget/SprintrFeedback"], {});
